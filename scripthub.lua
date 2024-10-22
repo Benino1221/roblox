@@ -118,6 +118,21 @@ TowerOfHellTab:AddButton({
   	end    
 })
 
+-- Adding the new tab "Rivals"
+local RivalsTab = Window:MakeTab({
+	Name = "Rivals",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+-- Button in "Rivals" tab that loads the specified script
+RivalsTab:AddButton({
+	Name = "Execute Rivals Script",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Sheeshablee73/Scriptss/main/Rivals%20Latest.lua",true))()
+  	end    
+})
+
 -- Initialize the interface
 OrionLib:Init()
 
