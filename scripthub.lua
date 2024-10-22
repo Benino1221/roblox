@@ -138,6 +138,21 @@ RivalsTab:AddButton({
   	end    
 })
 
+-- Adding the new tab "Doors"
+local DoorsTab = Window:MakeTab({
+	Name = "Doors",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+-- Button in "Doors" tab that loads the specified script
+DoorsTab:AddButton({
+	Name = "Execute Doors Script",
+	Callback = function()
+      		loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/730854e5b6499ee91deb1080e8e12ae3.lua"))()
+  	end    
+})
+
 -- Initialize the interface
 OrionLib:Init()
 
