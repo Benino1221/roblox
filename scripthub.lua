@@ -48,6 +48,14 @@ UniversalTab:AddButton({
   	end    
 })
 
+-- Button in Universal tab that loads the Rejoin Game script
+UniversalTab:AddButton({
+	Name = "Rejoin Game",
+	Callback = function()
+      		loadstring(game:HttpGet('https://raw.githubusercontent.com/Benino1221/roblox/refs/heads/main/rejoingame.lua'))()
+  	end    
+})
+
 -- Adding the new tab "A Dusty Trip"
 local DustyTripTab = Window:MakeTab({
 	Name = "A Dusty Trip",
