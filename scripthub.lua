@@ -1,6 +1,3 @@
---[[
-	WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
-]]
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Window = OrionLib:MakeWindow({Name = "ScriptHub", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
@@ -40,6 +37,14 @@ UniversalTab:AddButton({
 	Name = "ChatBypasser",
 	Callback = function()
       		loadstring(game:HttpGet('https://raw.githubusercontent.com/Gazer-Ha/Neko-v1/refs/heads/main/Googoogaagaa'))()
+  	end    
+})
+
+-- Button in Universal tab that loads the Anti-Lag script
+UniversalTab:AddButton({
+	Name = "Anti-Lag",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Benino1221/roblox/refs/heads/main/anti%20lag.lua"))()
   	end    
 })
 
